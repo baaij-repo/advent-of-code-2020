@@ -41,7 +41,7 @@ class Matrix:
         return "#" == self.inspect()
     
     def isFinished(self):
-        return (self.rows - 1) == self.position.y
+        return (self.rows - 1) <= self.position.y
 
 def runWithSlope(x , y):
     treeCount = 0
