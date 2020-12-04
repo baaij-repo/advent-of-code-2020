@@ -83,8 +83,6 @@ def run(validate):
             total += 1
             if validate(passportBuilder):
                 validPassports.append(passportBuilder)
-            # else:
-            #     print(f'Invalid passport found - {passportBuilder}')
             passportBuilder = {}
     print(f'Total passports - {total}')
     return len(validPassports)
